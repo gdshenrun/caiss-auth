@@ -46,7 +46,7 @@ return [
             'provider' => 'users',
 
             // 以下是 simple-jwt 所需的参数，具体配置文档可以看 config/autoload/auth.php
-            'secret' =>env('JWT_SECRET', 'qbhy/hyperf-auth'),
+            'secret' =>env('JWT_SECRET', 'gdshenrun/hyperf-auth'),
             'ttl' => 60 * 60, // 单位秒
             'default' => PasswordHashEncrypter::class,
             'encoder' => new Base64UrlSafeEncoder(),
@@ -218,5 +218,5 @@ $auth->guard('session')->login($user); // guard 方法不传参数或者传null�
 * user provider ===> Gdshenrun\CaissAuth\UserProvider  
 > 扩展教程请移步 [hyperf教程之hyperf-auth高级用法](https://mp.weixin.qq.com/s/jlbbN6zhWEVteimpi0mLjg)
 
-https://github.com/qbhy/hyperf-auth  
+https://github.com/gdshenrun/hyperf-auth  
 appledady@foxmail.com  

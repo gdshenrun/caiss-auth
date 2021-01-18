@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 /**
- * This file is part of qbhy/hyperf-auth.
+ * This file is part of gdshenrun/hyperf-auth.
  *
- * @link     https://github.com/qbhy/hyperf-auth
- * @document https://github.com/qbhy/hyperf-auth/blob/master/README.md
+ * @link     https://github.com/gdshenrun/hyperf-auth
+ * @document https://github.com/gdshenrun/hyperf-auth/blob/master/README.md
  * @contact  appledady@foxmail.com
- * @license  https://github.com/qbhy/hyperf-auth/blob/master/LICENSE
+ * @license  https://github.com/gdshenrun/hyperf-auth/blob/master/LICENSE
  */
 use Doctrine\Common\Cache\FilesystemCache;
 use Hyperf\Di\Container;
