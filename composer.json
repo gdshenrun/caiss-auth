@@ -1,6 +1,7 @@
 {
     "name": "gdshenrun/caiss-auth",
     "description": "hyperf 的 auth 组件",
+    "version": "1.0.1",
     "type": "library",
     "license": "MIT",
     "homepage": "https://github.com/gdshenrun/caiss-file.git",
