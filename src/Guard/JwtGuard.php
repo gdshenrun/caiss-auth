@@ -6,20 +6,20 @@ declare(strict_types=1);
  *
  * @link     https://github.com/qbhy/hyperf-auth
  * @document https://github.com/qbhy/hyperf-auth/blob/master/README.md
- * @contact  qbhy0715@qq.com
+ * @contact  appledady@foxmail.com
  * @license  https://github.com/qbhy/hyperf-auth/blob/master/LICENSE
  */
-namespace Qbhy\HyperfAuth\Guard;
+namespace Gdshenrun\CaissAuth\Guard;
 
 use Hyperf\HttpServer\Contract\RequestInterface;
 use Hyperf\Utils\Context;
 use Hyperf\Utils\Str;
-use Qbhy\HyperfAuth\Authenticatable;
-use Qbhy\HyperfAuth\Exception\AuthException;
-use Qbhy\HyperfAuth\Exception\UnauthorizedException;
-use Qbhy\HyperfAuth\UserProvider;
-use Qbhy\SimpleJwt\Exceptions\TokenExpiredException;
-use Qbhy\SimpleJwt\JWTManager;
+use Gdshenrun\CaissAuth\Authenticatable;
+use Gdshenrun\CaissAuth\Exception\AuthException;
+use Gdshenrun\CaissAuth\Exception\UnauthorizedException;
+use Gdshenrun\CaissAuth\UserProvider;
+use Gdshenrun\SimpleJwt\Exceptions\TokenExpiredException;
+use Gdshenrun\SimpleJwt\JWTManager;
 
 class JwtGuard extends AbstractAuthGuard
 {
@@ -128,10 +128,10 @@ class JwtGuard extends AbstractAuthGuard
     /**
      * 刷新 token，旧 token 会失效.
      *
-     * @throws \Qbhy\SimpleJwt\Exceptions\InvalidTokenException
-     * @throws \Qbhy\SimpleJwt\Exceptions\JWTException
-     * @throws \Qbhy\SimpleJwt\Exceptions\SignatureException
-     * @throws \Qbhy\SimpleJwt\Exceptions\TokenExpiredException
+     * @throws \Gdshenrun\SimpleJwt\Exceptions\InvalidTokenException
+     * @throws \Gdshenrun\SimpleJwt\Exceptions\JWTException
+     * @throws \Gdshenrun\SimpleJwt\Exceptions\SignatureException
+     * @throws \Gdshenrun\SimpleJwt\Exceptions\TokenExpiredException
      */
     public function refresh(?string $token = null): ?string
     {

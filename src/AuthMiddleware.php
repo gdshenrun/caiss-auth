@@ -6,17 +6,17 @@ declare(strict_types=1);
  *
  * @link     https://github.com/qbhy/hyperf-auth
  * @document https://github.com/qbhy/hyperf-auth/blob/master/README.md
- * @contact  qbhy0715@qq.com
+ * @contact  appledady@foxmail.com
  * @license  https://github.com/qbhy/hyperf-auth/blob/master/LICENSE
  */
-namespace Qbhy\HyperfAuth;
+namespace Gdshenrun\CaissAuth;
 
 use Hyperf\Di\Annotation\Inject;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
-use Qbhy\HyperfAuth\Exception\UnauthorizedException;
+use Gdshenrun\CaissAuth\Exception\UnauthorizedException;
 
 /**
  * Class AuthMiddleware.

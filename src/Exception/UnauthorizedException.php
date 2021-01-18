@@ -6,12 +6,12 @@ declare(strict_types=1);
  *
  * @link     https://github.com/qbhy/hyperf-auth
  * @document https://github.com/qbhy/hyperf-auth/blob/master/README.md
- * @contact  qbhy0715@qq.com
+ * @contact  appledady@foxmail.com
  * @license  https://github.com/qbhy/hyperf-auth/blob/master/LICENSE
  */
-namespace Qbhy\HyperfAuth\Exception;
+namespace Gdshenrun\CaissAuth\Exception;
 
-use Qbhy\HyperfAuth\AuthGuard;
+use Gdshenrun\CaissAuth\AuthGuard;
 use Throwable;
 
 class UnauthorizedException extends AuthException

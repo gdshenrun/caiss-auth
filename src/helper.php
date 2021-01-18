@@ -6,18 +6,18 @@ declare(strict_types=1);
  *
  * @link     https://github.com/qbhy/hyperf-auth
  * @document https://github.com/qbhy/hyperf-auth/blob/master/README.md
- * @contact  qbhy0715@qq.com
+ * @contact  appledady@foxmail.com
  * @license  https://github.com/qbhy/hyperf-auth/blob/master/LICENSE
  */
 use Hyperf\Utils\ApplicationContext;
-use Qbhy\HyperfAuth\AuthManager;
+use Gdshenrun\CaissAuth\AuthManager;
 
 if (! function_exists('auth')) {
     /**
      * 建议视图中使用该函数，其他地方请使用注入.
-     * @throws \Qbhy\HyperfAuth\GuardException
-     * @throws \Qbhy\HyperfAuth\UserProviderException
-     * @return AuthManager|mixed|\Qbhy\HyperfAuth\AuthGuard
+     * @throws \Gdshenrun\CaissAuth\GuardException
+     * @throws \Gdshenrun\CaissAuth\UserProviderException
+     * @return AuthManager|mixed|\Gdshenrun\CaissAuth\AuthGuard
      */
     function auth(?string $guard = null)
     {

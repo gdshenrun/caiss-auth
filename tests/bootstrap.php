@@ -6,7 +6,7 @@ declare(strict_types=1);
  *
  * @link     https://github.com/qbhy/hyperf-auth
  * @document https://github.com/qbhy/hyperf-auth/blob/master/README.md
- * @contact  qbhy0715@qq.com
+ * @contact  appledady@foxmail.com
  * @license  https://github.com/qbhy/hyperf-auth/blob/master/LICENSE
  */
 use Doctrine\Common\Cache\FilesystemCache;
@@ -16,9 +16,9 @@ use Hyperf\HttpServer\Contract\RequestInterface;
 use Hyperf\HttpServer\Request;
 use Hyperf\Utils\ApplicationContext;
 use HyperfTest\DemoUser;
-use Qbhy\HyperfAuth\Guard\JwtGuard;
-use Qbhy\HyperfAuth\Guard\SessionGuard;
-use Qbhy\HyperfAuth\Provider\EloquentProvider;
+use Gdshenrun\CaissAuth\Guard\JwtGuard;
+use Gdshenrun\CaissAuth\Guard\SessionGuard;
+use Gdshenrun\CaissAuth\Provider\EloquentProvider;
 
 require_once dirname(dirname(__FILE__)) . '/vendor/autoload.php';
 define('BASE_PATH', $dir = dirname(__DIR__, 1));
@@ -42,8 +42,8 @@ $container->define(\Hyperf\Contract\SessionInterface::class, function () {
     ));
 });
 
-$container->define(\Qbhy\HyperfAuth\AuthManager::class, function () {
-    return new \Qbhy\HyperfAuth\AuthManager(new \Hyperf\Config\Config([
+$container->define(\Gdshenrun\CaissAuth\AuthManager::class, function () {
+    return new \Gdshenrun\CaissAuth\AuthManager(new \Hyperf\Config\Config([
         'auth' => [
             'default' => [
                 'guard' => 'jwt',

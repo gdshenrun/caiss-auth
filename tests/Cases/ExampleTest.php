@@ -6,20 +6,20 @@ declare(strict_types=1);
  *
  * @link     https://github.com/qbhy/hyperf-auth
  * @document https://github.com/qbhy/hyperf-auth/blob/master/README.md
- * @contact  qbhy0715@qq.com
+ * @contact  appledady@foxmail.com
  * @license  https://github.com/qbhy/hyperf-auth/blob/master/LICENSE
  */
 namespace HyperfTest\Cases;
 
 use Hyperf\Utils\ApplicationContext;
 use HyperfTest\DemoUser;
-use Qbhy\HyperfAuth\Authenticatable;
-use Qbhy\HyperfAuth\AuthGuard;
-use Qbhy\HyperfAuth\AuthManager;
-use Qbhy\HyperfAuth\Guard\JwtGuard;
-use Qbhy\HyperfAuth\Guard\SessionGuard;
-use Qbhy\HyperfAuth\Provider\EloquentProvider;
-use Qbhy\SimpleJwt\JWT;
+use Gdshenrun\CaissAuth\Authenticatable;
+use Gdshenrun\CaissAuth\AuthGuard;
+use Gdshenrun\CaissAuth\AuthManager;
+use Gdshenrun\CaissAuth\Guard\JwtGuard;
+use Gdshenrun\CaissAuth\Guard\SessionGuard;
+use Gdshenrun\CaissAuth\Provider\EloquentProvider;
+use Gdshenrun\SimpleJwt\JWT;
 
 /**
  * @internal

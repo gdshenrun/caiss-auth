@@ -6,14 +6,14 @@ declare(strict_types=1);
  *
  * @link     https://github.com/qbhy/hyperf-auth
  * @document https://github.com/qbhy/hyperf-auth/blob/master/README.md
- * @contact  qbhy0715@qq.com
+ * @contact  appledady@foxmail.com
  * @license  https://github.com/qbhy/hyperf-auth/blob/master/LICENSE
  */
-namespace Qbhy\HyperfAuth\Guard;
+namespace Gdshenrun\CaissAuth\Guard;
 
-use Qbhy\HyperfAuth\Authenticatable;
-use Qbhy\HyperfAuth\AuthGuard;
-use Qbhy\HyperfAuth\UserProvider;
+use Gdshenrun\CaissAuth\Authenticatable;
+use Gdshenrun\CaissAuth\AuthGuard;
+use Gdshenrun\CaissAuth\UserProvider;
 
 abstract class AbstractAuthGuard implements AuthGuard
 {

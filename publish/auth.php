@@ -6,18 +6,18 @@ declare(strict_types=1);
  *
  * @link     https://github.com/qbhy/hyperf-auth
  * @document https://github.com/qbhy/hyperf-auth/blob/master/README.md
- * @contact  qbhy0715@qq.com
+ * @contact  appledady@foxmail.com
  * @license  https://github.com/qbhy/hyperf-auth/blob/master/LICENSE
  */
-use Qbhy\SimpleJwt\Encoders;
-use Qbhy\SimpleJwt\EncryptAdapters as Encrypter;
+use Gdshenrun\SimpleJwt\Encoders;
+use Gdshenrun\SimpleJwt\EncryptAdapters as Encrypter;
 
 /*
  * This file is part of qbhy/hyperf-auth.
  *
  * @link     https://github.com/qbhy/hyperf-auth
  * @document https://github.com/qbhy/hyperf-auth/blob/master/README.md
- * @contact  qbhy0715@qq.com
+ * @contact  appledady@foxmail.com
  * @license  https://github.com/qbhy/hyperf-auth/blob/master/LICENSE
  */
 return [
@@ -27,7 +27,7 @@ return [
     ],
     'guards' => [
         'jwt' => [
-            'driver' => Qbhy\HyperfAuth\Guard\JwtGuard::class,
+            'driver' => Gdshenrun\CaissAuth\Guard\JwtGuard::class,
             'provider' => 'users',
 
             /*
@@ -63,7 +63,7 @@ return [
 
             /*
              * 可选配置
-             * 加密类必须实现 Qbhy\SimpleJwt\Interfaces\Encrypter 接口
+             * 加密类必须实现 Gdshenrun\SimpleJwt\Interfaces\Encrypter 接口
              */
             'drivers' => [
                 Encrypter\PasswordHashEncrypter::alg() => Encrypter\PasswordHashEncrypter::class,
@@ -86,7 +86,7 @@ return [
             'cache' => new \Doctrine\Common\Cache\FilesystemCache(sys_get_temp_dir()),
             // 如果需要分布式部署，请选择 redis 或者其他支持分布式的缓存驱动
             //            'cache' => function () {
-            //                return make(\Qbhy\HyperfAuth\HyperfRedisCache::class);
+            //                return make(\Gdshenrun\CaissAuth\HyperfRedisCache::class);
             //            },
 
             /*
@@ -96,14 +96,14 @@ return [
             'prefix' => env('SIMPLE_JWT_PREFIX', 'default'),
         ],
         'session' => [
-            'driver' => Qbhy\HyperfAuth\Guard\SessionGuard::class,
+            'driver' => Gdshenrun\CaissAuth\Guard\SessionGuard::class,
             'provider' => 'users',
         ],
     ],
     'providers' => [
         'users' => [
-            'driver' => \Qbhy\HyperfAuth\Provider\EloquentProvider::class,
-            'model' => App\Model\User::class, //  需要实现 Qbhy\HyperfAuth\Authenticatable 接口
+            'driver' => \Gdshenrun\CaissAuth\Provider\EloquentProvider::class,
+            'model' => App\Model\User::class, //  需要实现 Gdshenrun\CaissAuth\Authenticatable 接口
         ],
     ],
 ];

@@ -6,17 +6,17 @@ declare(strict_types=1);
  *
  * @link     https://github.com/qbhy/hyperf-auth
  * @document https://github.com/qbhy/hyperf-auth/blob/master/README.md
- * @contact  qbhy0715@qq.com
+ * @contact  appledady@foxmail.com
  * @license  https://github.com/qbhy/hyperf-auth/blob/master/LICENSE
  */
-namespace Qbhy\HyperfAuth\Guard;
+namespace Gdshenrun\CaissAuth\Guard;
 
 use Hyperf\Contract\SessionInterface;
 use Hyperf\Utils\Context;
-use Qbhy\HyperfAuth\Authenticatable;
-use Qbhy\HyperfAuth\Exception\AuthException;
-use Qbhy\HyperfAuth\Exception\UnauthorizedException;
-use Qbhy\HyperfAuth\UserProvider;
+use Gdshenrun\CaissAuth\Authenticatable;
+use Gdshenrun\CaissAuth\Exception\AuthException;
+use Gdshenrun\CaissAuth\Exception\UnauthorizedException;
+use Gdshenrun\CaissAuth\UserProvider;
 
 class SessionGuard extends AbstractAuthGuard
 {

@@ -6,17 +6,17 @@ declare(strict_types=1);
  *
  * @link     https://github.com/qbhy/hyperf-auth
  * @document https://github.com/qbhy/hyperf-auth/blob/master/README.md
- * @contact  qbhy0715@qq.com
+ * @contact  appledady@foxmail.com
  * @license  https://github.com/qbhy/hyperf-auth/blob/master/LICENSE
  */
-namespace Qbhy\HyperfAuth;
+namespace Gdshenrun\CaissAuth;
 
 use Hyperf\Di\Annotation\Aspect;
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\Di\Aop\AbstractAspect;
 use Hyperf\Di\Aop\ProceedingJoinPoint;
-use Qbhy\HyperfAuth\Annotation\Auth;
-use Qbhy\HyperfAuth\Exception\UnauthorizedException;
+use Gdshenrun\CaissAuth\Annotation\Auth;
+use Gdshenrun\CaissAuth\Exception\UnauthorizedException;
 
 /**
  * @Aspect
